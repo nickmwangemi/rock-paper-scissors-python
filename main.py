@@ -24,3 +24,13 @@ def game_play(user_input):
             print("Scissors cuts paper! You win!")
         else:
             print("Rock smashes scissors! You lose.")
+
+
+while True:
+    print('\n ##### Rock, Paper, Scissors ####')
+    user_input = input("\nEnter your choice: rock? paper? scissors? ")
+    game_play(user_input.lower())
+
+    play_again = input("\nWould you like to play again? (y/n): ")
+    if play_again.lower() != "y":
+        break
